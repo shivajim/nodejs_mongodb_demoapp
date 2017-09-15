@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Standup Meeting Members Details</h1>
+    <div class="container">
+      <div class="col-md-12 column list-group">
+        <hr>
+      {% for note in notes%}
+        <div class="list-group-item">
+          <div> Note from <em > <strong> {{note.memberName}} </strong></em>
+              on: {{note.createdOn}} - for project: <strong>{{note.project}}</strong> 
+              <div> <strong> Work Yesterday: </strong> {{note.workYesterday}}</div>
+              <div> <strong> Work Today: </strong> {{note.workToday}}</div>
+              <div> <strong> Impediment: </strong> {{note.impediment}}</div>
+          </div>
+        </div>
+        <hr>
+        {% endfor%}
+      </div>
+    </div>
+  </body>
+</html>

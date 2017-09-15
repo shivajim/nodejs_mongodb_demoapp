@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    body {
+    background-color: #eee;
+}
+
+*[role="form"] {
+    max-width: 730px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.3em;
+}
+
+*[role="form"] h2 {
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+</style>
+
+<div class="container">
+    <form class="form-horizontal" role="form" method="post" action="newnote">
+        <h2>Stand up meeting form</h2>
+        <div class="form-group" >
+            <label for="memberName" class="col-sm-3 control-label">Name</label>
+            <div class="col-sm-9">
+                <select id="memberName" name="memberName" class="form-control">
+                    <option>John</option>
+                    <option>Jemmy</option>
+                    <option>Laura</option>
+                    <option>Mark</option>
+                    <option>Peter</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group" >
+            <label for="project" class="col-sm-3 control-label">Project</label>
+            <div class="col-sm-9">
+                <select id="project" name="project" class="form-control">
+                    <option>Indian Defence</option>
+                    <option>ACB Buero</option>
+                    <option>INDIAN NAVY</option>
+                </select>
+            </div>
+        </div>        
+        <div class="form-group">
+            <label for="workYesterday"  class="col-sm-3 control-label">Yesterda's work</label>
+            <div class="col-sm-9">
+                <textarea rows="3" id="workYesterday" name="workYesterday" placeholder="Yesterday's work" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="workToday"  class="col-sm-3 control-label">Today's Work</label>
+            <div class="col-sm-9">
+                <textarea rows="3" id="workToday" name="workToday" placeholder="Today's work" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="impediment"  class="col-sm-3 control-label">Any impediment</label>
+            <div class="col-sm-9">
+                <textarea rows="3" id="impediment" name="impediment" placeholder="Any impediment" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-9 col-sm-offset-3">
+                <button type="submit" class="btn btn-primary btn-block">Save</button>
+            </div>
+        </div>        
+    </form> <!-- /form -->
+</div> <!-- ./container -->
